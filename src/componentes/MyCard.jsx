@@ -3,12 +3,12 @@ import Tags from "./Tags";
 
 const MyCard = (props) => {
   return (
-    <Card style={{ width: "24rem" }}>
+    <Card style={{ width: "250px" }}>
       <Card.Img
         variant="top"
         src={props.imagen}
-        style={{ width: "20rem", height: "18rem"}}
-        alt="perro"
+        style={{ width: "180px", height: "180px"}}
+        alt="perro-adopcion"
       />
       <Card.Body>
         <Card.Title>{props.nombre}</Card.Title>
@@ -16,7 +16,6 @@ const MyCard = (props) => {
       </Card.Body>
       <Tags color={props.color} btnNombre={props.btnNombre} />
     </Card>
-  );
-};
-
+  )
+}
 export default MyCard;

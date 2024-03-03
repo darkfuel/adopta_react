@@ -6,5 +6,4 @@ const Tags = (props) => {
         <Badge bg={props.color}>{props.btnNombre}</Badge>
     )
 }
-
 export default Tags;

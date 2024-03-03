@@ -3,12 +3,13 @@ import "./App.css";
 import Footer from "./componentes/Footer";
 import MyCard from "./componentes/MyCard";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Stack } from "react-bootstrap";
 
 function App() {
   return (
     <>
-      <div className="main">
         <Header titulo="Adopta un Perrito" />
+      <Stack direction="horizontal" gap={4}>
         <MyCard
           imagen="https://i.ibb.co/P4shDby/pexels-sebastian-coman-travel-3610168.jpg"
           nombre="Toby"
@@ -33,14 +34,13 @@ function App() {
         <MyCard
           imagen="https://i.ibb.co/s2DDhrF/pexels-dominika-roseclay-2023386.jpg"
           nombre="Zeus"
-          descrip="Bonito Rottweiler vacunado y desparasitado con 1 mes de nacido está dispuesto a crecer en un nuevo hogar"
+          descrip="Vacunado con 1 mes; dispuesto a crecer en un nuevo hogar"
           color="success"
           btnNombre="Rottweiler"
         />
-      </div>
+      </Stack>
       <Footer />
     </>
-  );
+  )
 }
-
 export default App;
